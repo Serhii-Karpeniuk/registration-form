@@ -9,17 +9,18 @@
   <h1 id="title">Registration Form</h1>
   <p id="description">Please provide your details to create an account.</p>
 
-  <form id="survey-form" action="https://forms.gle/R4xnSucZe1Cxq3B88" method="post">
+  <form id="survey-form">
     <div>
       <h3><label for="name">*Name: </label></h3>
-      <input id="name" type="text" name="name" placeholder="Enter your name" required>
+      <input id="name" type="text" name="entry.1234567890" placeholder="Enter your name" required>
     </div>
 
     <div>
       <h3><label for="email">*Email: </label></h3>
-      <input id="email" type="email" name="email" placeholder="Enter your email" required> 
+      <input id="email" type="email" name="entry.9876543210" placeholder="Enter your email" required> 
     </div>
 
+  
     <div>
       <h3><label for="age">*Age: </label></h3>
       <input id="age" type="number" name="age" min="12" max="90" placeholder="Enter your age" required> 
@@ -47,13 +48,30 @@
       <p><input type="checkbox" name="direction" value="qa">QA engineer</p>
      </div>
 
-    <div>
-      <h3>About you more</h3>
-      <textarea id="textarea" name="about" cols="32" rows="5" placeholder="Write about yourself"></textarea>
-    </div>
-    
     <button id="submit" type="submit">Send</button>
   </form>
+
+  <script>
+    document.getElementById("submit").addEventListener("click", function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(document.getElementById("survey-form"));
+
+      const formUrl = "https://docs.google.com/forms/d/e/1MMShhWo_QWvdrcwnI5rwKrmQZjXCOhFe0xVpHib9MyE/formResponse";
+
+      fetch(formUrl, {
+        method: "POST",
+        body: formData
+      })
+      .then(response => {
+        // Додайте код для обробки відповіді
+        console.log("Response:", response);
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      });
+    });
+  </script>
 </body>
 </html>
 
