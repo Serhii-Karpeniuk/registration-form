@@ -1,11 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Hello SoftServe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
   </head>
-  <body>
-    <h1>Hello SoftServe</h1>
-      <p>l want to study with you)</p>
-      <img width= "300" src="https://forbes.ua/static/storage/thumbs/1200x630/8/45/3df6ab03-1a9b7e247dfa4de393408ecb90a6f458.jpg?v=5449_1">
-  </body>
+
+<body >
+  <h1 id="title">Registration Form</h1>
+  <p id="description">Please provide your details to create an account.</p>
+
+  <form id="survey-form">
+    <div>
+      <h3><label id="name-label">*Name: </label></h3>
+      <input id="name" type="text" name="#name-label"  placeholder="Enter your name" required>
+   </div>
+
+    <div>
+     <h3><label id="email-label">*Email: </label></h3>
+      <input id="email" type="email" name="#email-label" placeholder="Enter your email" required> 
+    </div>
+     
+     <div>
+       <h3><label id="number-label">*Age: </label></h3>
+      <input id="number" type="number" name="#number-label" min="12" max="90" placeholder="Enter your number" required> 
+      </div>
+
+    <div>
+    <h3>
+      <label id=dropdown-lan>*Language:</label>
+    </h3>
+    <select id="dropdown" name="language" required>
+      <option value="" disabled selected>Select a language</option>
+      <option>Ukrainian</option>
+      <option>Engilsh</option>
+      <option>Czech</option>
+      <option>French</option>
+      <option>German</option>
+      <option>Polish</option>
+    </select>
+    </div>
+      
+      <div>
+    <h3><label id="password-label">*Password: </label></h3>
+      <input id="password" type="password" name="#password-label"  placeholder="Create password" pattern="^(?=.*[A-Z]).{8,16}$" min="8" max="16" required> 
+      </div>
+
+    <div>
+    <h3>Do you like programming?</h3>
+    <input type="radio" name="programming" value="yes">Yes
+    <p></p>
+     <input type="radio" name="programming" value="no">No
+     </div>
+
+     
+     <h3>What direction do you like in IT?</h3>
+       <div>
+     <p><input type="checkbox" name="direction" value="frontend">Front-end developer</p>
+     <p><input type="checkbox" name="direction" value="backend">Python developer</p>
+     <p><input type="checkbox" name="direction" value="java">Java developer</p>
+     <p><input type="checkbox" name="direction" value="full-stack">Full-stack developer</p>
+     <p><input type="checkbox" name="direction" value="designer">UI/UX designer</p>
+      <p><input type="checkbox" name="direction" value="qa">QA engineer</p>
+     </div>
+
+     <div>
+       <h3>About you more</h3>
+       <textarea id="textarea" cols="32" rows="5" placeholder="Write me about you"></textarea>
+     </div>
+     
+    <button id="submit" type="submit">Send</button>
+
+  </form>
+</body>
 </html>
