@@ -1,58 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-  <title>Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Graphik:100,100i,200,200i,300,400&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
+
 <body>
-  <h1 id="title">Registration Form</h1>
-  <p id="description">Please provide your details to create an account.</p>
+  <header>
+    <div id="header">
+      <ul class="header-main">
+        <option class="header-link">Home</option>
+        <option class="header-link">Product</option>
+        <option class="header-link">Pricing</option>
+        <option class="header-link">About</option>
+        <option class="header-link">Contact</option>
+      </ul>
+      <img class="figma-logo" src="img/Rectangle 4 (2).svg" alt="figma-logo">
+      <img class="media-links" src="img/social media.png" alt="facebook">
+    </div>
+    <div class="container">
+      <h1>The best products
+        start with Figma</h1>
+      <h4 class="first-block">Most calendars are designed for teams. Slate is designed
+        for freelancers</h4>
+        <button class="my-button">Try For Free</button>
+      </div>
+  </header>
 
-  <form id="survey-form">
-    <div>
-      <h3><label for="name">*Name: </label></h3>
-      <input id="name" type="text" name="entry.1234567890" placeholder="Enter your name" required>
+  <main>
+    <div id="text-content">
+      <h2 class="h2-text-content">Features</h2>
+      <h4 class="h4-text-content">Most calendars are designed for teams. Slate is designed for freelancers</h4>
+    </div>
+    <div id="items">
+      <img src="img/ Items.jpg" alt="items">
     </div>
 
-    <div>
-      <h3><label for="email">*Email: </label></h3>
-      <input id="email" type="email" name="entry.9876543210" placeholder="Enter your email" required> 
+    <div class="video-block">
+      <img src="img/ video screen.jpg" alt="video">
     </div>
 
-    <!-- Додайте інші поля вводу та виберіть відповідні значення "name" для них -->
+    <div class="container-4">
+      <div class="content">
+      <h2 class="h2-container-4">Fastest way to organize</h2>
+      <h4 class="h4-container-4">Most calendars are designed for teams. 
+        Slate is designed for freelancers</h4>
+        <button class="button-master">Try For Free</button>
+      </div>
+        <img class="macbook-img" src="img/ Macbook Pro.jpg" alt="Macbook">
+    </div>
 
-    <button id="submit" type="submit">Send</button>
-  </form>
+    <div class="container-5">
+      <img class="message-img" src="img/message-image.jpg" alt="message-image">
+      <div class="block-text">
+      <h3 class="h3-container-5">At your fingertips</h3>
+      <h2 class="h2-container-5">Lightning fast prototyping</h2>
+      <h3 class="h3-container-5">Subscribe to our Newsletter</h3>
+      <p>Available exclusivery on Figmaland</p>
+    </div>
+    <div class="input-submit">
+      <img class="input-img" src="img/input.jpg" alt="input">
+      <img src="img/master button.jpg" alt="button">
+    </div>
+    </div>
 
-  <script>
-    document.getElementById("submit").addEventListener("click", function(event) {
-      event.preventDefault();
+    <div class="container-6">
+      <h2 class="h2-container-6">Partners</h2>
+      <h4  class="h4-container-6">Most calendars are designed for teams. Slate is designed for freelancers</h4>
+    </div>
+    
+    <div class="company-img">
+      <img src="img/company.svg" alt="company-photo">
+      <button class="button-company">Try For Free</button>
+    </div>
 
-      const formData = new FormData(document.getElementById("survey-form"));
+    <div class="container-7">
+      <h2 class="h2-container-7">Testimonials</h2>
+      <img class="logo-ibm" src="img/logos_ibm.svg" alt="logo-ibm">
+      <h4 class="h4-container-7">Most calendars are designed for teams. Slate is designed for freelancers 
+        who want a simple way to plan their schedule.</h4>
+      <img class="client-img" src="img/client.png" alt="client">
+      <button class="button-7">More Testimonials</button>
+    </div>
+    
+    <div class="container-8">
+      <h2 class="h2-container-8">Pricing</h2>
+      <h4 class="h4-container-8">Most calendars are designed for teams. Slate is designed for freelancers</h4>
 
-      const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSduPv34BrXWUOeZamUetilXT5CNi8sf7Xz_JiQPCHO37ngucw/formResponse";
+    <div class="columns">
+      <div class="columns-1">
+        <h3 class="h3-columns">FREE</h3>
+        <h5 class="h5-colums">Organize across all 
+          apps by hand</h5>
+          <div class="price">
+          <h1 class="h1-columns-1">0</h1>
+          <h3 class="h3-columns-1">$</h3>
+          <h5 class="h5-columns-1">Per Month</h5>
+        </div>
+          <ul class="list">
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+          </ul>
 
-      fetch(formUrl, {
-        method: "POST",
-        body: formData
-      })
-      .then(response => response.text())
-      .then(data => {
-        // Ви можете аналізувати дані відповіді тут
-        console.log("Response data:", data);
+          <button class="button-8">Order Now</button>
+      </div>
 
-        // Наприклад, вивести повідомлення про успішну відправку
-        if (data.includes("Your response has been recorded.")) {
-          alert("Your response has been recorded successfully!");
-        } else {
-          alert("There was an error recording your response.");
-        }
-      })
-      .catch(error => {
-        console.error("Error:", error);
-      });
-    });
-  </script>
+      <div class="columns-2">
+        <h3>STANDARD</h3>
+        <h5>Organize across all 
+          apps by hand</h5>
+          <h1>10</h1>
+          <h3>$</h3>
+          <h5>Per Month</h5>
+          <ul>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+          </ul>
+
+          <button>Order Now</button>
+      </div>
+
+      <div class="columns-3">
+        <h3>BUSINESS</h3>
+        <h5>Organize across all 
+          apps by hand</h5>
+          <h1>99</h1>
+          <h3>$</h3>
+          <h5>Per Month</h5>
+          <ul>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+            <option>Pricing Feature</option>
+          </ul>
+          <button>Order Now</button>
+      </div>
+    </div>
+    </div>
+
+  </main>
+  <footer></footer>
 </body>
 </html>

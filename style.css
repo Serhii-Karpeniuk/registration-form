@@ -1,0 +1,361 @@
+* {
+  font-family: Graphik;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+header {
+  background-image: url(img/back-img.jpg);
+  display: flex;
+  justify-content: space-between;
+  width: 1775.7659912109375px;
+  height: 930px;
+}
+
+#header {
+  width: 1210px;
+  height: 156px;
+  border-radius: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 282.5px;
+  font-size: 15px;
+}
+
+.header-main {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.header-link {
+  margin-right: 20px;
+  color: #FFFFFF;
+  ;
+}
+
+
+.figma-logo,
+.media-links {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 74px;
+}
+
+.first-block {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+
+.container {
+  position: absolute;
+  top: 200px;
+  width: 786px;
+  height: 295px;
+  gap: 7px;
+  text-align: center;
+  margin: 0 495.5px;
+}
+
+.my-button {
+  display: inline-block;
+  width: 236px;
+  height: 52px;
+  padding: 16 0 16px 0;
+  font-size: 20px;
+  background-color: #2091F9;
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+
+}
+
+#text-content {
+  color: #121212;
+  width: 552px;
+  height: 182px;
+  gap: 7px;
+  text-align: center;
+  margin: 80px 611.5px;
+}
+
+h2-text-content {
+  width: 194px;
+  height: 55px;
+  font-size: 48px;
+}
+
+h4-text-content {
+  font-size: 28px;
+  width: 552px;
+  height: 100px;
+  padding: 10px;
+  gap: 10px;
+}
+
+#items {
+  margin: 0px 453px;
+  position: absolute;
+  top: 1150px;
+}
+
+.video-block {
+  width: 1177px;
+  height: 658px;
+  border-radius: 40px;
+  margin: 250px auto;
+}
+
+.h2-container-4 {
+  font-size: 48px;
+  width: 335px;
+  height: 110px;
+}
+
+.h4-container-4 {
+  font-size: 28px;
+  width: 532px;
+  height: 80px;
+}
+
+.button-master {
+  width: 236px;
+  height: 60px;
+  padding: 16px 0px 16px 0px;
+  border-radius: 35px;
+  border: 1px;
+  background-color: #2091F9;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.container-4 {
+  display: flex;
+  align-items: center;
+  margin: 0 267px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.macbook-img {
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+.container-5 {
+  display: flex;
+  align-items: end;
+  margin: 90px 168.5px;
+}
+
+.block-text {
+  flex: 2;
+  position: relative;
+  bottom: 150px;
+  left: 150px;
+}
+
+.message-image {
+  max-width: 100%;
+  margin: 30px auto;
+}
+
+.h3-container-5 {
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.h2-container-5 {
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.input-submit {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 90px;
+  right: 100px;
+  align-items: end;
+}
+
+.input-img {
+  margin-right: 10px;
+}
+
+.h2-container-6 {
+  text-align: center;
+  font-size: 48px;
+  width: 188px;
+  height: 55px;
+  margin: 150px auto 20px;
+}
+
+.h4-container-6 {
+  font-size: 28px;
+  width: 532px;
+  height: 80px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.company-img {
+  margin: 50px 351px;
+}
+
+.button-company {
+  align-items: center;
+  width: 236px;
+  height: 60px;
+  margin: 50px 385px;
+  font-size: 20px;
+  background-color: #2091F9;
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.h2-container-7,
+.logo-ibm {
+  margin: 20px 770px;
+}
+
+.h4-container-7 {
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  width: 967px;
+  height: 80px;
+  margin: 10px 435px;
+}
+
+.client-img {
+  margin: 20px 765.5px;
+}
+
+.button-7 {
+  align-items: center;
+  width: 236px;
+  height: 60px;
+  margin: 50px 730.5px;
+  font-size: 20px;
+  background-color: #2091F9;
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.container-8 {
+  background-color: #252B42;
+  width: 1,777px;
+  height: 1,155px;
+  
+}
+
+.h3-columns {
+  margin: 0 100px;
+}
+
+.h5-columns {
+  margin-left: 100px;
+}
+
+.h2-container-8 {
+  text-align: center;
+  color: #FFFFFF;
+  
+}
+
+.h4-container-8 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 336px;
+}
+
+.columns-1 {
+  width: 335px;
+  height: 607px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  Border: 1px;
+  Padding: 40px;
+  Gap: 30px;
+  margin: 86px 20px;
+}
+
+.columns-2 {
+  background-color: #2091F9;
+  width: 335px;
+  height: 693px;
+  border-radius: 10px;
+  Border: 1px;
+  Padding: 40px;
+  Gap: 30px;
+  margin-top: 40px;
+}
+
+.columns-3 {
+  width: 335px;
+  height: 607px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  Border: 1px;
+  Padding: 40px;
+  Gap: 30px;
+  margin: 86px 20px;
+}
+
+.h1-columns-1 {
+  color: #121212;
+  margin-right: 30px;
+}
+
+.h3-columns-1  {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 120px;
+  left: 10px;
+  margin: 10px ;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.h5-columns-1 {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 115px;
+  left: 40px;
+  margin: 10px;
+}
+
+option {
+  margin: 20px auto;
+}
+
+.price {
+  margin: 0 100px;
+}
