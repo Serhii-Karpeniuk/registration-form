@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -10,7 +10,7 @@
   <h1 id="title">Registration Form</h1>
   <p id="description">Please provide your details to create an account.</p>
 
-  <form id="survey-form">
+  <form id="survey-form" action="https://formspree.io/f/xdorzdqb" method="POST">
     <div>
       <h3><label id="name-label">*Name: </label></h3>
       <input id="name" type="text" name="#name-label"  placeholder="Enter your name" required>
@@ -43,7 +43,7 @@
       
       <div>
     <h3><label id="password-label">*Password: </label></h3>
-      <input id="password" type="password" name="#password-label"  placeholder="Create password" pattern="^(?=.*[A-Z]).{8,16}$" min="8" max="16" required> 
+      <input id="password" type="password" name="#password-label"  placeholder="Create password" pattern="^(?=.*[A-Z]).{8,16}$"  required> 
       </div>
 
     <div>
@@ -68,11 +68,7 @@
        <h3>About you more</h3>
        <textarea id="textarea" cols="32" rows="5" placeholder="Write me about you"></textarea>
      </div>
-     
-     <form action="https://formspree.io/f/xdorzdqb" method="POST">
     <button id="submit" type="submit">Send</button>
-    </form>
-
   </form>
 </body>
 </html>
